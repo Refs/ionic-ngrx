@@ -122,5 +122,38 @@ npm install jest-presets-angular --save-dev
 
 ![](./images/jest-configure.jpg)
 
+![](./images/jest-setup.jpg)
+
+8. COMMANDS
+
+```bash
+# run test
+jest
+
+# generate entity using ngrx schematics
+ng g entity state/product --flat false
+
+# generate component 
+# in ionic component is more like a subset of pages 
+ionic generate component products
+
+# generate pages
+
+ionic generate page products
+
+```
+
+## CONTAINER-PRESENTATION
+
+![](./images/container-presentation.jpg)
+
+* What we want to start todo is think about dumb components versus(对打游戏中的VS) smart components or what we now has really termed(术语) as container components versus presentation components . 
+
+* Containers are worried about how do I get data and how things are going happen , and this is typically going to be a page and  you presentation component is going to be sub component of the page. 
+
+* Presentation components are really worried about one basic thing that how do I present the data . Then if anything happends, if any sort of system event happend or any sort of user event happens, most commonly 'hey ! user clicked on something , user want to edit this guy'. In those cases I'm going to output those out on a event emitter and send that item back up to the parent , so it can decide how to handle it . So the presentation component gets all of its data inputs.  So the presentation doesn't know anything services , it doesn't know about stores, it dosesn't know anything about you acturally do once it clicks .' So they'll go okay you clicked on me but I'm not the one decide , I'm going go ahead and hand this up to my parent '
+
+* The real power in this is that now I have components that are highly reusable . I'm no longer have a lot of logic embedded into my presentation components that are dictationg(大声的讲或读，指示) 
+
 
 
