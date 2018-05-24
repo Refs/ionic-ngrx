@@ -109,7 +109,7 @@ ng set defaults.schematics.collection=@ngrx/schematics
 
 > I've got paths configured but acturally path still don't work. So what we just showed above is how you would do in a standard angular CLI project , but the problem is how webpack builds for ionic is a little different . So we nedd to tell webpack what to do , so webpack is missing a little step here . We want to create a config folder in our route and add a webpack.config.js file . What's this going to do is to help resolve 
 
-![](./images/webpack-configure.jpg)
+![](./z-images/webpack-configure.jpg)
 
 
 7. JEST
@@ -120,9 +120,9 @@ npm install jest-presets-angular --save-dev
 
 ```
 
-![](./images/jest-configure.jpg)
+![](./z-images/jest-configure.jpg)
 
-![](./images/jest-setup.jpg)
+![](./z-images/jest-setup.jpg)
 
 8. COMMANDS
 
@@ -145,7 +145,7 @@ ionic generate page products
 
 ## CONTAINER-PRESENTATION
 
-![](./images/container-presentation.jpg)
+![](./z-images/container-presentation.jpg)
 
 * What we want to start todo is think about dumb components versus(对打游戏中的VS) smart components or what we now has really termed(术语) as container components versus presentation components . 
 
@@ -158,6 +158,6 @@ ionic generate page products
 
 ## APP & CODE
 
-![](./images/app&code.jpg)
+![]( ./z-images/app&code.jpg)
 
 
