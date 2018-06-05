@@ -1,7 +1,5 @@
 # ionic-ngrx
 
-> video: NgRx Mobile with Ionic - Jesse Sanders
-> https://www.youtube.com/watch?v=KgUuiI_HVII
 
 ## The advantage of ngrx upon services
 
@@ -54,7 +52,7 @@ npm i @angular/cli --save-dev
 # ngrx schematics: will save you alit of time , so instead of hveing to generate out model, actions, reducer, effects yourself, it's going to give you a baseline to work with  
 npm i @ngrx/{store,entity,effects,schematics}
 
-# install store freeze(冻结)
+# install store freeze
 # with ngrx-devtools we can take a look at how our state's changing . If we're doing ngrx, it's a really a mandate(正式命令) you should have the dev tools and you need to see how your state changing and you need to make sure you states not getting mutated (突变)
 # store-freeze is a meta-reducer that prevents state from being mutated, it'll make sure that it you do mutate it , instead of it just kind of silently failing on you it'll go ahead and throw an error and let you know that you mutated state and you need to probably fix you reducer 
 npm i @ngrx/store-devtools ngrx-store-freeze --save-dev
@@ -147,7 +145,7 @@ ionic generate page products
 
 ![](./z-images/container-presentation.jpg)
 
-* What we want to start todo is think about dumb components versus(对打游戏中的VS) smart components or what we now has really termed(术语) as container components versus presentation components . 
+* What we want to start todo is think about dumb components versus(对打游戏中的VS) smart components or what we now has really termed as container components versus presentation components . 
 
 * Containers are worried about how do I get data and how things are going happen , and this is typically going to be a page and  you presentation component is going to be sub component of the page. 
 
